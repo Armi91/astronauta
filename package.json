@@ -1,0 +1,27 @@
+{
+  "name": "astronaut_electron",
+  "version": "1.0.0",
+  "description": "Ubieranie astronauty",
+  "main": "main.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron-builder": "^20.28.4",
+    "electron": "^1.8.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Berrylife",
+  "build": {
+    "appId": "astronaut.app",
+    "target": "nsis",
+    "productName": "astronauta",
+    "directories": {
+      "buildResources": "build"
+    }
+  }
+}
